@@ -1,7 +1,8 @@
 import {createMuiTheme } from '@material-ui/core/styles';
-
 const neonGreen = "#39ff14"
 const white = "#EDF5E1"
+const cyan = "#33EAFF"
+
 
 const Theme = createMuiTheme({
     typography: {
@@ -34,6 +35,16 @@ const Theme = createMuiTheme({
         MuiInputBase: {
             input: {
                 color: white
+            }
+        },
+        MuiTab: {
+            wrapper: {
+                color: "#33eaff"
+            }
+        },
+        MuiTabs: {
+            indicator: {
+                backgroundColor: "#33eaff"
             }
         }
     }

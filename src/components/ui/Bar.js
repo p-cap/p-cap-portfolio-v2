@@ -5,7 +5,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { useMediaQuery } from "@material-ui/core";
 
-// components 
+// routes 
 import Me from './routes/Me';
 import Projects from './routes/Projects';
 import Resume from './routes/Resume';
@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     maxWidth: 700,
+    backgroundColor: "black"
   }
 }));
 
@@ -32,14 +33,13 @@ export default function Bar() {
     const [value, setValue] = React.useState(0);
     const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("xs"));
 
-  
     const handleChange = (event, newValue) => {
       setValue(newValue);
     };
   
     return (
       <BrowserRouter>
-        <Paper square className={classes.root}>
+        <Paper square className={classes.root} elevation={28}>
             <Tabs
               value={value}
               onChange={handleChange}
