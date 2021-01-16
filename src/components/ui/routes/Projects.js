@@ -31,16 +31,14 @@ const useStyles = makeStyles((theme) => ({
     height: 400,
     width: 400,
     backgroundColor: "black",
-  //   [theme.breakpoints.down("md")]: {
-  //     height: 350,
-  //     width: 350,
-  //   },
-  // [theme.breakpoints.down("sm")]: {
-  //    height: 300,
-  //    width: 300,
-  //   },
+    ...theme.paperOpacity,
+    [theme.breakpoints.down("md")]: {
+      width: 350,
+    },
+  [theme.breakpoints.down("sm")]: {
+     width: 300,
+    },
   // [theme.breakpoints.down("xs")]: {
-  //    height: 200,
   //    width: 200,
   //    padding: "1rem"
   //   }

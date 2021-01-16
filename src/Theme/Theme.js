@@ -1,4 +1,5 @@
 import {createMuiTheme } from '@material-ui/core/styles';
+import { InsertChartOutlinedTwoTone } from '@material-ui/icons';
 const neonGreen = "#39ff14"
 const white = "#EDF5E1"
 const cyan = "#33EAFF"
@@ -51,11 +52,14 @@ const Theme = createMuiTheme({
             indicator: {
                 backgroundColor: cyan
             }
-        }
+        },
     },
     otherFont: {
         fontFamily: 'Permanent Marker'
         },
+    paperOpacity: {
+        opacity: 0.9,
+    }
 })
 
 
