@@ -6,7 +6,11 @@ const cyan = "#33EAFF"
 
 const Theme = createMuiTheme({
     typography: {
-        fontFamily: "Montserrat",
+        fontFamily: [
+            "Montserrat",
+            // 'Permanent Marker',
+            // 'cursive'
+        ].join(','),
         h1: {
             fontWeight: 900
         }
@@ -29,7 +33,8 @@ const Theme = createMuiTheme({
         color: white,    
         fontWeight: '650',
         fontSize: '5rem',
-        textShadow: '1px 1px #EDF5E1',
+        textShadow: '2px 2px #33EAFF',
+        fontFamily: 'Permanent Marker',
       },
     overrides: {
         MuiInputBase: {
@@ -39,15 +44,18 @@ const Theme = createMuiTheme({
         },
         MuiTab: {
             wrapper: {
-                color: "#33eaff"
+                color: cyan
             }
         },
         MuiTabs: {
             indicator: {
-                backgroundColor: "#33eaff"
+                backgroundColor: cyan
             }
         }
-    }
+    },
+    otherFont: {
+        fontFamily: 'Permanent Marker'
+        },
 })
 
 

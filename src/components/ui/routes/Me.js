@@ -2,7 +2,7 @@ import React from 'react'
 import linkedIn from '../../assets/linkedin.svg'
 import Github from '../../assets/Github.svg'
 import Twitter from '../../assets/twitter.svg'
-import { Grid, Typography, makeStyles } from '@material-ui/core'
+import { Grid, Typography, makeStyles, Box } from '@material-ui/core'
 import MyPic from '../../assets/My Pic.svg'
 
 const useStyles = makeStyles((theme) => ({
@@ -10,11 +10,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1
   },
   titleText: {
-    color: theme.palette.secondary.main,
-    fontWeight: '650',
-    fontSize: '5rem',
-    textShadow: '2px 2px #379683',
 
+   ...theme.titleText,
     [theme.breakpoints.down("lg")]: {
       fontSize: "4.75rem"
     },
@@ -28,16 +25,22 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "1.0rem"
     },
   },
+  
   gridImage: {
     ...theme.pcapImage
   },
   centeredText: {
     position: 'absolute',
-    top: '20px',
+    [theme.breakpoints.down("xl")]: {
+      top: '4rem',
+    },
+    [theme.breakpoints.down("xs")]: {
+      top: '20px',
+    },
     left: '0px',
     width: '100%',
     fontWeight: '500',
-    fontSize: '3rem',
+    fontSize: '2rem',
   },
   personalLinks: {
     [theme.breakpoints.down("md")]: {
@@ -61,41 +64,59 @@ export default function Me() {
 
   return (
     <div className={classes.root}>
-      <Grid item> 
-        <Typography variant="h2" className={classes.titleText}>
-                  Life Long Learner of Cyber & Coding
-        </Typography>
-      </Grid>
-      <Grid item className={classes.gridImage}>
-          <img alt="test" src={MyPic} />
-          <Typography className={classes.centeredText}>pcap</Typography>
-      </Grid>
-    <Grid 
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-          spacing={5}
-          >         
-            <Grid item>
-              <a href="https://www.linkedin.com/in/paul-capili-a56b2315b">
-                <img alt="pcap linkedIn" src={linkedIn} className={classes.personalLinks} ></img>
-              </a>
-            </Grid>
-            <Grid item>
-              <a href="https://twitter.com/pcapili22">
-                <img alt="pcap twitter" src={Twitter} className={classes.personalLinks} ></img>
-              </a>
-            </Grid>
-            <Grid item>
-              <a href="https://github.com/p-cap">
-                <img alt="pcap github" src={Github} className={classes.personalLinks}></img>
-              </a>
-            </Grid>
-        </Grid> 
+      <br/>
+      <br/>
+      <br/>
+      <Grid 
+        container
+        direction="column"
+        justify="center"
+        alignItems="center"
+        spacing={10}
+        >
+          <Grid item> 
+            <Typography variant="h2" className={classes.titleText}>
+                      Life Long Learner of Cyber & Coding
+            </Typography>
+          </Grid>
+          <Grid item className={classes.gridImage}>
+              <img alt="test" src={MyPic} />
+              <Typography className={classes.centeredText}>
+                Striving to bridge the gap 
+                <br/>
+                between    
+                <br/>
+                software development and security
+                <br/>
+                .....1 bit at a time
+              </Typography>
+          </Grid>
+          <Grid 
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={5}
+              >         
+                <Grid item>
+                  <a href="https://www.linkedin.com/in/paul-capili-a56b2315b">
+                    <img alt="pcap linkedIn" src={linkedIn} className={classes.personalLinks} ></img>
+                  </a>
+                </Grid>
+                <Grid item>
+                  <a href="https://twitter.com/pcapili22">
+                    <img alt="pcap twitter" src={Twitter} className={classes.personalLinks} ></img>
+                  </a>
+                </Grid>
+                <Grid item>
+                  <a href="https://github.com/p-cap">
+                    <img alt="pcap github" src={Github} className={classes.personalLinks}></img>
+                  </a>
+                </Grid>
+            </Grid> 
+        </Grid>
         </div>  
     )
 }
 
 
-// h2 for the title is sitting at 5rem

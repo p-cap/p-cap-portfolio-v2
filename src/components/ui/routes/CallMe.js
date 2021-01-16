@@ -37,12 +37,16 @@ export default function CallMe() {
   const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("xs"));
 
   return (
+    <div>
+      <br/>
+      <br/>
+      <br/>      
       <Grid
         container
         direction="column"
         justify="center"
         alignItems="center"
-        spacing={4}
+        spacing={8}
         >
           <Grid item>
               <Typography variant="h2" className={classes.titleText}>Call me</Typography>
@@ -101,5 +105,6 @@ export default function CallMe() {
             </Grid>
           </Grid>
         </Grid>
+        </div>
   )
 }

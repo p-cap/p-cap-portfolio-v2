@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import { Paper, Typography } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
 import ResumeInfo, { Certifications, Volunteer } from '../../Info/ResumeInfo';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -33,13 +34,17 @@ export default function Resume() {
   const classes = useStyles();
 
   return (
+    <div>
+      <br/>
+      <br/>
+      <br/>
       <Grid 
         container 
         direction="column"
         justify="center"
         alignItems="center"
         spacing={4}>
-          <Grid item xs>
+          <Grid item>
             <Typography variant="h2" className={classes.titleText}>Resume</Typography>
           </Grid>
               {ResumeInfo.map(info => (
@@ -80,6 +85,6 @@ export default function Resume() {
             </Grid>
             
         </Grid>
-
+        </div>
     )
 }

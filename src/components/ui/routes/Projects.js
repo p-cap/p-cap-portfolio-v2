@@ -2,8 +2,19 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Paper, Typography } from '@material-ui/core';
+import Box from '@material-ui/core/Box';
+import { useMediaQuery } from "@material-ui/core";
+
+//images
+import Swift from '../../assets/Swift_logo.svg';
+import Python from '../../assets/Python.svg';
+import Javascript from '../../assets/Javascript.svg'
+import Java from '../../assets/Java.svg';
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
   titleText: {
    ...theme.titleText,
     [theme.breakpoints.down("md")]: {
@@ -19,27 +30,37 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     height: 400,
     width: 400,
-    [theme.breakpoints.down("md")]: {
-      height: 350,
-      width: 350,
-    },
-  [theme.breakpoints.down("sm")]: {
-     height: 300,
-     width: 300,
-    },
-  [theme.breakpoints.down("xs")]: {
-     height: 200,
-     width: 200,
-     padding: "1rem"
-    }
+    backgroundColor: "black",
+  //   [theme.breakpoints.down("md")]: {
+  //     height: 350,
+  //     width: 350,
+  //   },
+  // [theme.breakpoints.down("sm")]: {
+  //    height: 300,
+  //    width: 300,
+  //   },
+  // [theme.breakpoints.down("xs")]: {
+  //    height: 200,
+  //    width: 200,
+  //    padding: "1rem"
+  //   }
+  },
+  synopsisText: {
+    ...theme.otherFont,
+    fontSize: '2rem'
   }
 }));
 
 
 export default function Projects() {
   const classes = useStyles();
+  const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down("xs"));
 
   return (
+    <div>
+      <br/>
+      <br/>
+      <br/>
     <Grid 
         container 
         direction="column"
@@ -52,12 +73,30 @@ export default function Projects() {
         <Grid item>
           <Grid 
             container
-            direction="row"
+            direction={isSmallScreen ? "column": "row"}
             justify="center"
             alignItems="center"
             spacing={3}>
             <Grid item>
-              <Paper className={classes.paper} />
+                <Paper className={classes.paper}>
+                 <Box p={2}>
+                      <a href="https://github.com/p-cap/resolution2021" style={{ textDecoration: 'none'}}>
+                        <img alt="Swift" src={Swift} />
+                        <img alt="Python" src={Python} />
+                        <img alt="Javascript" src={Javascript} />
+                        <img alt="Java" src={Java} />
+                        <br/>
+                        <br/>
+                        <Typography color="primary" align='center'>
+                          <Typography className={classes.synopsisText}>Resolution 2021 </Typography><br/>
+                          Swift / SwiftUi mobile applications <br/>
+                          Data Structures and Algorithms with Python, Java and Javascript <br/>
+                          SYNOPSIS: This repo consists of small snippets of code for practice.
+                          Quantitative practice leads to qualitative results <br/>
+                        </Typography>
+                        </a>
+                  </Box>
+                </Paper>
             </Grid>
             <Grid item>
               <Paper className={classes.paper} />
@@ -68,5 +107,8 @@ export default function Projects() {
           </Grid>
         </Grid>
     </Grid>
+    </div>
     )
 }
+
+//https://github.com/p-cap/resolution2021
