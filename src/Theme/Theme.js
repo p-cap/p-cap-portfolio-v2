@@ -3,7 +3,7 @@ import { InsertChartOutlinedTwoTone } from '@material-ui/icons';
 const neonGreen = "#39ff14"
 const white = "#EDF5E1"
 const cyan = "#33EAFF"
-
+const lime = "#bfff00"
 
 const Theme = createMuiTheme({
     typography: {
@@ -40,7 +40,7 @@ const Theme = createMuiTheme({
     overrides: {
         MuiInputBase: {
             input: {
-                color: white
+                color: lime
             }
         },
         MuiTab: {
