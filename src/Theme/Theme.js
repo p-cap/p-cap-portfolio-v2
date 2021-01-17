@@ -4,6 +4,7 @@ const neonGreen = "#39ff14"
 const white = "#EDF5E1"
 const cyan = "#33EAFF"
 const lime = "#bfff00"
+const almond = "#FFEBCD"
 
 const Theme = createMuiTheme({
     typography: {
@@ -22,12 +23,12 @@ const Theme = createMuiTheme({
         },
         secondary: {
             main: white
-        },
+        }
     },
     pcapImage: {
         position: 'relative',
         textAlign: 'center',
-        color: 'white',
+        color: almond,
         width: '100%'
       },
     titleText: {

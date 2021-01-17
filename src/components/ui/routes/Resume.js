@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.20rem"
     },
+   jobItemText: {
+      ...theme.typography.subtitle1
+    }
   },
   paper: {
     ...theme.paperOpacity,
@@ -48,16 +51,18 @@ export default function Resume() {
             <Typography variant="h2" className={classes.titleText}>Resume</Typography>
           </Grid>
               {ResumeInfo.map(info => (
-                   <Grid item key={info.jobTitle} > 
+                   <Grid item key={info.jobTitle} >
+                        
                         <Paper elevation={23} className={classes.paper}>
-                        <Box p={3} style={{ backgroundColor: 'inherit'}}>
+                        <Box p={3}>
                             <Typography variant="h3" color="primary">{info.jobTitle}</Typography>
+                            <br />
                             <Typography variant="body1" color="secondary">{info.location}</Typography>
                             <Typography color="secondary">{info.timeFrame}</Typography>             
                                <Typography variant="subtitle1" color="secondary">
                                 <li>{info.jobItem1}</li>
-                                <li>{info.jobItem2}</li>
-                                <li>{info.jobItem3}</li>
+                                { info.jobItem2 === undefined ?  null : <li>{info.jobItem2}</li> }
+                                { info.jobItem3 === undefined ?  null : <li>{info.jobItem2}</li> }
                                 </Typography>
                         </Box>
                         </Paper>
@@ -66,9 +71,10 @@ export default function Resume() {
             <Grid item>
                 <Paper elevation={23} className={classes.paper}>
                 <Box p={3}>
-                      <Typography variant="h3"color="secondary"> Education / Cerifications </Typography>
+                      <Typography variant="h3" color="primary" > Education / Cerifications </Typography>
+                      <br />
                         {Certifications.map(info=> (
-                            <Typography color="secondary"><li>{info}</li></Typography>
+                            <Typography color="secondary" variant="subtitle1"><li>{info}</li></Typography>
                     ))}
                 </Box>
                </Paper>
@@ -76,9 +82,10 @@ export default function Resume() {
             <Grid item>
                 <Paper elevation={23} className={classes.paper}>
                 <Box p={3}>
-                    <Typography variant="h3" color="secondary"> Volunteer / Opportunities </Typography>
+                    <Typography variant="h3" color="primary"> Volunteer / Opportunities </Typography>
+                    <br />
                         {Volunteer.map(info => (
-                            <Typography color="secondary"><li>{info}</li></Typography>
+                            <Typography color="secondary" variant="subtitle1"><li>{info}</li></Typography>
                     ))}
                 </Box> 
                 </Paper>
