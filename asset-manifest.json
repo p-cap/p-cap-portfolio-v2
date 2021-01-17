@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/p-cap-portfilio-v2/static/js/main.a83c0d76.chunk.js",
-    "main.js.map": "/p-cap-portfilio-v2/static/js/main.a83c0d76.chunk.js.map",
+    "main.js": "/p-cap-portfilio-v2/static/js/main.8261e672.chunk.js",
+    "main.js.map": "/p-cap-portfilio-v2/static/js/main.8261e672.chunk.js.map",
     "runtime-main.js": "/p-cap-portfilio-v2/static/js/runtime-main.9040ab7f.js",
     "runtime-main.js.map": "/p-cap-portfilio-v2/static/js/runtime-main.9040ab7f.js.map",
     "static/js/2.d8772db5.chunk.js": "/p-cap-portfilio-v2/static/js/2.d8772db5.chunk.js",
@@ -10,18 +10,18 @@
     "static/js/3.da8b4afe.chunk.js.map": "/p-cap-portfilio-v2/static/js/3.da8b4afe.chunk.js.map",
     "index.html": "/p-cap-portfilio-v2/index.html",
     "static/js/2.d8772db5.chunk.js.LICENSE.txt": "/p-cap-portfilio-v2/static/js/2.d8772db5.chunk.js.LICENSE.txt",
-    "static/media/Github.828838bc.svg": "/p-cap-portfilio-v2/static/media/Github.828838bc.svg",
-    "static/media/Java.50570794.svg": "/p-cap-portfilio-v2/static/media/Java.50570794.svg",
-    "static/media/Javascript.ce8f5e00.svg": "/p-cap-portfilio-v2/static/media/Javascript.ce8f5e00.svg",
-    "static/media/My Pic.6bf3548d.svg": "/p-cap-portfilio-v2/static/media/My Pic.6bf3548d.svg",
-    "static/media/Python.7b454990.svg": "/p-cap-portfilio-v2/static/media/Python.7b454990.svg",
-    "static/media/Swift_logo.c76abb30.svg": "/p-cap-portfilio-v2/static/media/Swift_logo.c76abb30.svg",
-    "static/media/linkedin.fb763c85.svg": "/p-cap-portfilio-v2/static/media/linkedin.fb763c85.svg",
-    "static/media/twitter.ad87ef95.svg": "/p-cap-portfilio-v2/static/media/twitter.ad87ef95.svg"
+    "static/media/Github.0abeab19.svg": "/p-cap-portfilio-v2/static/media/Github.0abeab19.svg",
+    "static/media/Java.7c1b8431.svg": "/p-cap-portfilio-v2/static/media/Java.7c1b8431.svg",
+    "static/media/Javascript.1b809e3d.svg": "/p-cap-portfilio-v2/static/media/Javascript.1b809e3d.svg",
+    "static/media/My Pic.b3580cd0.svg": "/p-cap-portfilio-v2/static/media/My Pic.b3580cd0.svg",
+    "static/media/Python.95feb05b.svg": "/p-cap-portfilio-v2/static/media/Python.95feb05b.svg",
+    "static/media/Swift_logo.e118515b.svg": "/p-cap-portfilio-v2/static/media/Swift_logo.e118515b.svg",
+    "static/media/linkedin.d183bb91.svg": "/p-cap-portfilio-v2/static/media/linkedin.d183bb91.svg",
+    "static/media/twitter.0fa93f9d.svg": "/p-cap-portfilio-v2/static/media/twitter.0fa93f9d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9040ab7f.js",
     "static/js/2.d8772db5.chunk.js",
-    "static/js/main.a83c0d76.chunk.js"
+    "static/js/main.8261e672.chunk.js"
   ]
 }
