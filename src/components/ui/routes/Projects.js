@@ -46,6 +46,10 @@ const useStyles = makeStyles((theme) => ({
   synopsisText: {
     ...theme.otherFont,
     fontSize: '2rem'
+  }, 
+  comingSoonText: {
+    ...theme.otherFont,
+    fontSize: '4rem'
   }
 }));
 
@@ -97,10 +101,29 @@ export default function Projects() {
                 </Paper>
             </Grid>
             <Grid item>
-              <Paper className={classes.paper} />
+              <Paper className={classes.paper} >
+                <Box p={8}>
+                  <Typography 
+                    color="primary" 
+                    align='center' 
+                    className={classes.comingSoonText}
+                    >
+                      Coming Soon ;=)</Typography>   
+                </Box>
+              </Paper>
             </Grid>
             <Grid item>
-              <Paper className={classes.paper} />
+              <Paper className={classes.paper} >
+              <Box 
+                p={8}>
+                  <Typography 
+                    color="primary" 
+                    align="center"
+                    className={classes.comingSoonText}
+                    >
+                      Coming Soon ;=)</Typography>   
+                </Box>
+              </Paper>
             </Grid>
           </Grid>
         </Grid>
