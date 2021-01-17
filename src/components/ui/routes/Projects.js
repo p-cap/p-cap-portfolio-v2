@@ -109,4 +109,3 @@ export default function Projects() {
     )
 }
 
-//https://github.com/p-cap/resolution2021

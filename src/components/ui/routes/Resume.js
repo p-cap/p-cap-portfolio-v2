@@ -74,7 +74,7 @@ export default function Resume() {
                       <Typography variant="h3" color="primary" > Education / Cerifications </Typography>
                       <br />
                         {Certifications.map(info=> (
-                            <Typography color="secondary" variant="subtitle1"><li>{info}</li></Typography>
+                            <Typography key={info} color="secondary" variant="subtitle1"><li>{info}</li></Typography>
                     ))}
                 </Box>
                </Paper>
@@ -85,7 +85,7 @@ export default function Resume() {
                     <Typography variant="h3" color="primary"> Volunteer / Opportunities </Typography>
                     <br />
                         {Volunteer.map(info => (
-                            <Typography color="secondary" variant="subtitle1"><li>{info}</li></Typography>
+                            <Typography key ={info} color="secondary" variant="subtitle1"><li>{info}</li></Typography>
                     ))}
                 </Box> 
                 </Paper>

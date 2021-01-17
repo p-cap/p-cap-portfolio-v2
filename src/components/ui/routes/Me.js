@@ -2,7 +2,7 @@ import React from 'react'
 import linkedIn from '../../assets/linkedin.svg'
 import Github from '../../assets/Github.svg'
 import Twitter from '../../assets/twitter.svg'
-import { Grid, Typography, makeStyles, Box } from '@material-ui/core'
+import { Grid, Typography, makeStyles } from '@material-ui/core'
 import MyPic from '../../assets/My Pic.svg'
 
 const useStyles = makeStyles((theme) => ({

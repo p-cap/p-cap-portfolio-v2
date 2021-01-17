@@ -39,7 +39,7 @@ export default function Bar() {
   
     return (
       <BrowserRouter>
-        <Paper square className={classes.root} elevation={28}>
+        <Paper square className={classes.root} elevation={23}>
             <Tabs
               value={value}
               onChange={handleChange}
